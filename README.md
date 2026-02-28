@@ -1,8 +1,8 @@
-#  VM Lifecycle Management API (OpenStack-Inspired)
+#  VM Lifecycle Management API
 
 ##  Project Overview
 
-This project implements a VM lifecycle management system inspired by OpenStack. It provides REST APIs to create, start, stop, retrieve, and delete virtual machines.
+This project implements a VM lifecycle management system. It provides REST APIs to create, start, stop, retrieve, and delete virtual machines.
 
 The system is built using FastAPI and follows a layered architecture to separate API handling, business logic, and storage. It serves as a proof-of-concept demonstrating backend engineering, API design, and system design principles.
 
@@ -12,7 +12,6 @@ The system is built using FastAPI and follows a layered architecture to separate
 
 * Create VM
 * List all VMs
-* Get VM by ID
 * Start VM
 * Stop VM
 * Delete VM
@@ -125,9 +124,9 @@ Separates API, business logic, and storage to improve maintainability, testabili
 
 ##  Roadmap / Future Enhancements
 
-* Replace in-memory storage with PostgreSQL
+* Replace in-memory storage with Database
 * Add asynchronous task processing for VM operations
-* Introduce message queue (Kafka/RabbitMQ) for scalability
+* Introduce message queue for scalability
 * Implement logging and monitoring
 * Add authentication and authorization
 * Containerize using Docker and deploy on Kubernetes
